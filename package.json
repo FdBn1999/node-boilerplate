@@ -1,0 +1,24 @@
+{
+  "name": "node-boilerplate",
+  "version": "1.0.0",
+  "description": "A simple node project boilerplate",
+  "main": "src/index.js",
+  "repository": "https://github.com/FdBn1999/node-boilerplate.git",
+  "author": "FdBn1999 <fbanchero23@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon -r dotenv/config --exec babel-node src/index.js",
+    "build": "babel src -d dist --env-name production"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "nodemon": "^2.0.2",
+    "source-map-support": "^0.5.16"
+  }
+}
